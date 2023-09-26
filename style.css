@@ -1,0 +1,1434 @@
+* {
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* this is navbar animation section */
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__fadeInRight {
+    --animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}
+
+/* All delay classes will take half the time to start */
+:root {
+    --animate-delay: 0.5s;
+}
+
+/* All animations will take twice as long to finish */
+:root {
+    --animate-duration: 2s;
+}
+
+/* Only this element will take half the time to finish */
+.my-element {
+    --animate-duration: 0.5s;
+}
+
+/* Add animation delay to li elements */
+.animate__animated.animate__fadeInRight.delayed-animation {
+    animation-delay: 0s;
+}
+
+.animate__animated.animate__fadeInRight.delayed-animation:nth-child(2) {
+    animation-delay: 0.5s;
+    /* 1 second delay for the second li */
+}
+
+.animate__animated.animate__fadeInRight.delayed-animation:nth-child(3) {
+    animation-delay: 1s;
+    /* 2 seconds delay for the third li */
+}
+
+.animate__animated.animate__fadeInRight.delayed-animation:nth-child(4) {
+    animation-delay: 1.5s;
+    /* 3 seconds delay for the third li */
+}
+
+.animate__animated.animate__fadeInRight.delayed-animation:nth-child(5) {
+    animation-delay: 2s;
+    /* 4 seconds delay for the third li */
+}
+
+.animate__animated.animate__fadeInRight.delayed-animation:nth-child(6) {
+    animation-delay: 2.5s;
+    /* 5 seconds delay for the third li */
+}
+
+/* The element will repeat the animation 2x
+   It's better to set this property locally and not globally or
+   you might end up with a messy situation */
+.my-element {
+    --animate-repeat: 2;
+}
+
+
+
+
+
+
+
+
+/* this is the portfolio effect */
+.content {
+    position: relative;
+    padding: 50px 150px;
+    display: inline;
+    width: 40%;
+}
+
+h2 {
+    margin: 0;
+    padding: 5px 60px;
+    font-family: "Poppins", sans-serif;
+    width: 70%;
+}
+
+.content h2 {
+    color: #fff;
+    font-size: 2.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content h2:nth-child(1) {
+    color: transparent;
+    /* this is font boder thickness */
+    -webkit-text-stroke: 1px #e71d6e;
+
+}
+
+.content h2:nth-child(2) {
+    color: #ed12d4;
+    animation: animate 2s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
+    }
+}
+
+/* here effect ends */
+
+
+
+
+
+/* hi i am part */
+
+.leftsection {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0px 0px;
+    width: 540px;
+    height: 265px;
+
+}
+
+#element {
+    color: black;
+}
+
+.purple {
+    color: purple;
+    font-size: 4rem;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Tourney', cursive;
+}
+
+.leftsection a,
+.hire-button a {
+    color: white;
+}
+
+.leftsection a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.7rem;
+
+}
+
+.hire {
+    padding-top: 30px;
+}
+
+.hire-button {
+    --color: rgb(142, 14, 71);
+    display: inline-block;
+    cursor: pointer;
+    border: 0px solid rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: .40em;
+    position: relative;
+    isolation: isolate;
+    background-color: rgb(69, 10, 69);
+    box-shadow: 0 0 4px;
+    width: auto;
+    height: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 0.2s;
+
+}
+
+.hire-button:hover:active {
+    scale: 0.9;
+}
+
+.hire-button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    inset: 0;
+    scale: 0 1;
+    transition: scale 650ms;
+    box-shadow: #4f1b42;
+}
+
+.hire-button:hover::after,
+.hire-button:focus-visible::after {
+    scale: 1 1;
+    border-radius: 0.4em;
+    border: #ceced1 groove 2PX;
+}
+
+
+HTML CSS Result Skip Results Iframe EDIT ON
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");  */
+
+
+main section div h1 {
+    font-family: "Montserrat Medium";
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
+}
+
+span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+span:nth-child(1) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+    animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+    animation: fade-in 0.8s 2.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+    animation: fade-in 0.8s 2.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+    animation: fade-in 0.8s 3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+    animation: fade-in 0.8s 3.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+    animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+    animation: fade-in 0.8s 3.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+    animation: fade-in 0.8s 4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+    animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+
+
+/* the gray text is here */
+.gray {
+    text-align: center;
+    color: gray;
+    font-size: large
+}
+
+.gray img {
+    height: 10px;
+    width: 40px;
+}
+
+
+
+
+
+
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+.icons a {
+    background: #ecf0f3;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    margin: 0 10px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    box-shadow: -3px -3px 7px #ffffff,
+        3px 3px 5px #ceced1;
+}
+
+.icons a:hover{
+    transform: scale(1.1);
+}
+.icons a:hover:active{
+    scale: 0.4;
+}
+
+.icons a:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    /* background: #ecf0f3 */
+    box-shadow: inset -2px -2px 5px #ffffff,
+        inset 2px 2px 3px #ceced1;
+}
+
+.icons a i {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.icons a:hover i {
+    transform: scale(0.9);
+}
+
+.icons a.fb i {
+    color: #4267B2;
+}
+.icons .fb:hover{
+    box-shadow: 0px 0px rgb(0, 255, 68), 0em 0em 2em rgba(6, 51, 230, 0.373);
+}
+
+.icons a.twitter i {
+    color: #091319;
+}
+.icons .twitter:hover{
+    box-shadow: 0px 0px rgb(0, 255, 68), 0em 0em 2em rgba(0, 0, 0, 0.373);
+}
+
+.icons a.insta i {
+    color: #f20a57;
+}
+.icons .insta:hover{
+    box-shadow: 0px 0px rgb(0, 255, 68), 0em 0em 2em rgba(238, 5, 60, 0.373);
+}
+.icons a.git i {
+    color: #081662;
+}
+.icons .git:hover{
+    box-shadow: 0px 0px rgb(0, 255, 68), 0em 0em 2em rgba(16, 4, 122, 0.373);
+}
+.icons a.yt i {
+    color: #ff0000;
+}
+.icons .yt:hover{
+    box-shadow: 0px 0px rgb(0, 255, 68), 0em 0em 2em rgba(255, 30, 1, 0.373);
+}
+#mail-link:hover{
+transform: none;
+}
+#mail-link::before{
+    content: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+    /* background: #ecf0f3 */
+    box-shadow: 0 0 0 ;
+}
+#mail-link{
+    background: none;
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    border-radius: 0;
+    box-shadow: 0 0 0 ;
+    color: white;
+    transform: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* all similar content styling codes */
+section {
+    padding: 100px 0;
+
+}
+
+.project-leftdiv {
+    margin: 20px;
+    background-color: #f1e9e94c;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    bottom: 30px;
+    z-index: 2;
+}
+
+.page-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.about,
+.services,
+.skills,
+.teams,
+.contact,
+footer {
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(33, 19, 19);
+    color: #e6e6e6;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+/* navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 0px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 5px 0;
+    background: rgb(39, 1, 37);
+}
+
+.navbar .page-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: rgb(221, 11, 148);
+    text-shadow: 0 0 2px;
+
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+}
+
+/* menu btn styling */
+
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+
+    /* don't forget to set a duration! */
+}
+
+/* This only changes this particular animation duration */
+.animate__hinge {
+    --animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}
+
+:root {
+    --animate-delay: 2s;
+}
+
+/* All delay classes will take half the time to start */
+:root {
+    --animate-delay: 0.5s;
+}
+
+/* All animations will take twice as long to finish */
+:root {
+    --animate-duration: 2s;
+}
+
+/* Only this element will take half the time to finish */
+.my-element {
+    --animate-duration: 0.5s;
+}
+
+/* The element will repeat the animation 2x
+It's better to set this property locally and not globally or
+you might end up with a messy situation */
+.my-element {
+    --animate-repeat: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background: #4f1b42;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 40px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border: #e6e6e6 solid 1px;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    filter: brightness(80%);
+    transform: scale(1.09);
+    box-shadow: 0px 0px 0px rgb(237, 2, 2), 0em 0em 4em rgb(255, 255, 255);
+}
+
+
+/* home section styling */
+.home {
+    display: flex;
+    background: url("icons/bg\ image.jpg") no-repeat center;
+    opacity: 1;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .page-width {
+    width: 100%;
+    display: flex;
+}
+
+.home .page-width .row {
+    margin-right: 0;
+}
+
+
+/* about section styling */
+
+.about .about-content .left {
+    width: 40%;
+    height: 400px;
+    box-shadow: 0 0 5px;
+    border-radius: 1em;
+}
+
+.about .about-content .left img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: crimson;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.last-para {
+    padding-bottom: 20px;
+}
+
+
+
+/* services section styling */
+.services,
+.teams {
+    color: #111;
+    background: #e6e6e6;
+    height: 900px;
+}
+
+.services .title::before,
+.teams .title::before {
+    background: #fff;
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    height: 426px;
+}
+
+.services .card-gray img {
+    width: 250px;
+    height: 8px;
+}
+
+.services .card-gray {
+    align-items: end;
+}
+
+
+.services .serv-content .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    transform: scale(1.15);
+    box-shadow: 0px 0px red, 0em 0.5em 1em rgba(113, 81, 81, 0.366);
+    border: #8888885d solid 1px;
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* skills section styling */
+
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(232, 15, 189);
+}
+
+.skills-content .right .python::before {
+    width: 92%;
+}
+
+.skills-content .right .html::before {
+    width: 90%;
+}
+
+.skills-content .right .css::before {
+    width: 80%;
+}
+
+.skills-content .right .javascript::before {
+    width: 70%;
+}
+
+.skills-content .right .java::before {
+    width: 80%;
+}
+
+.skills-content .right .c::before {
+    width: 85%;
+}
+
+.skills-content .right .cpp::before {
+    width: 85%;
+}
+
+/* teams section styling */
+
+.teams .carousel .card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.6s ease;
+    height: 400px;
+    width: 320px;
+
+}
+
+.teams .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover {
+    transform: scale(1.15);
+    box-shadow: 0px 0px red, 0em 0.5em 1em rgba(113, 81, 81, 0.366);
+    border: #8888885d solid 1px;
+}
+
+.teams .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+#projects .card-gray img {
+    width: 250px;
+    height: 8px;
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid rgb(90, 11, 81) !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: rgb(90, 11, 81) !important;
+}
+
+.owl-carousel .owl-stage {
+    height: 530px;
+    position: absolute;
+    top: 50px;
+}
+
+.owl-carousel .owl-stage-outer {
+    padding-left: 30px;
+    width: 1130px;
+}
+
+.owl-carousel .owl-item:active {
+    width: 320px;
+}
+
+#projects .page-width {
+    padding: 20px;
+}
+
+/* contact section styling */
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 90px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: crimson;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+    color: white;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border-color: #b3b3b3;
+    border: 1px solid black;
+    transition: 1s;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button-area {
+    display: flex;
+    align-items: center;
+}
+
+/* footer section styling */
+footer {
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: crimson;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+/* responsive media query start */
+@media (max-width: 1104px) {
+    .about .about-content .left img {
+        height: 100%;
+        width: 100%;
+    }
+
+    html {
+        width: auto;
+    }
+
+    .navbar.sticky {
+        height: 100px;
+    }
+
+    .navbar .content {
+        height: 60px;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .animate__animated.animate__fadeInRight {
+        --animate-duration: none;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    li {
+        animation: none;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+        background-image: url("icons/pexels-pixabay-247676.jpg");
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home h1 {
+        width: 100%;
+        height: 250px;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 5px 0px;
+        width: 70%;
+    }
+
+    .home {
+        text-align: left;
+        height: 700px;
+
+    }
+
+    .page-width {
+        padding: 20px;
+    }
+
+    .home span {
+        font-size: 40px;
+        padding: 0;
+    }
+
+    .max-width {
+        max-width: 930px;
+    }
+
+    .about .about-content .column {
+        width: 100%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+        height: 500px;
+    }
+
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .skills .skills-content .column,
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    #services {
+        height: 1700px;
+    }
+
+    .navbar {
+        height: 100px;
+    }
+
+    .navbar h2 {
+        width: 100%;
+    }
+
+    .navbar .content {
+        width: 80%;
+        text-align: left;
+        height: 93px;
+    }
+
+    .navbar .page-width {
+        width: 100%;
+        padding: calc(100%-100px);
+        height: 100px;
+    }
+
+    .content {
+        width: 50%;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        width: 100%;
+    }
+
+    .content h2 {
+        color: #fff;
+        font-size: 2.5em;
+        position: absolute;
+        transform: translate(-25%, -25%);
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+
+    .home .home-content a {
+        font-size: 20px;
+    }
+
+    .services .serv-content .card {
+        width: 100%;
+    }
+
+    .content h2 {
+        color: #fff;
+        font-size: 2.5em;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 19px;
+    }
+
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+
+    .contact .right form .name,
+    .contact .right form .email {
+        margin: 0;
+    }
+
+    .right form .error-box {
+        width: 150px;
+    }
+
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+
+    .content {
+        width: 0%;
+        height: 40px;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 100px;
+    }
+
+    .owl-carousel .owl-stage-outer {
+        width: 350px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* the Bubble pointer effect start */
+.bubble-container {
+    position: relative;
+}
+
+.bubble {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(121, 126, 225, 0.108);
+    border-radius: 100%;
+    position: absolute;
+    pointer-events: none;
+    border: rgba(77, 69, 225, 0.466) outset 1px;
+    box-shadow: 0 0px 5px rgba(59, 109, 226, 0.19),
+        inset 6px 9px 12px #275bd600,
+        /* inset 3px 3px 3px rgb(63, 63, 228), */
+        inset 2px 2px 4px rgba(63, 116, 201, 0);
+    z-index: 99;
+    animation: scaleAnimation 2s infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1.6);
+    }
+}
+
+
+.pointer-follower {
+    width: 1px;
+    height: 1px;
+    background-color: none;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    /* Place the pointer follower on top */
+}
+
+/* on hovering  */
+/* .leftsection a:hover{
+    
+    border: rgb(193, 68, 193) solid 2px;
+    background-color: transparent;
+    box-shadow: 0 0 10px;
+    color:  rgb(49, 46, 46);
+    transition: 0.2s;
+} */
+/* end on hovering */
+/* End of Bubble effect */
+/* icon puff out animation */
