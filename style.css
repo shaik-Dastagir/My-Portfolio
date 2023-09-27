@@ -113,7 +113,7 @@ h2 {
 .content h2:nth-child(1) {
     color: transparent;
     /* this is font boder thickness */
-    -webkit-text-stroke: 1px #e71d6e;
+    -webkit-text-stroke: 0.7px #e71d6e;
 
 }
 
