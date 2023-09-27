@@ -690,7 +690,7 @@ you might end up with a messy situation */
     position: fixed;
     height: 40px;
     width: 40px;
-    background: #4f1b42;
+    background: #ffffff;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -704,8 +704,9 @@ you might end up with a messy situation */
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
-    border: #e6e6e6 solid 1px;
+    border: rgb(0, 0, 121) solid 2px;
 }
+
 
 .scroll-up-btn.show {
     bottom: 30px;
@@ -1044,7 +1045,7 @@ you might end up with a messy situation */
 
 .contact .contact-content .info .sub-title {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 .contact .contact-content .info .sub-title a{
     padding: 0;
@@ -1351,7 +1352,7 @@ footer span a:hover {
     }
 
     .scroll-up-btn {
-        right: 15px;
+        right: 10px;
         bottom: 15px;
         height: 38px;
         width: 35px;
