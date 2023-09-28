@@ -932,7 +932,7 @@ you might end up with a messy situation */
     overflow: hidden;
     transition: all 0.6s ease;
     height: 400px;
-    width: 320px;
+    width: 100%;
 
 }
 
@@ -992,7 +992,7 @@ you might end up with a messy situation */
 }
 
 .owl-carousel .owl-stage-outer {
-    padding-left: 30px;
+    padding-left: 0px;
     width: 1130px;
 }
 
@@ -1002,6 +1002,9 @@ you might end up with a messy situation */
 
 #projects .page-width {
     padding: 20px;
+}
+.owl-carousel .owl-stage{
+    width: 100%;
 }
 
 /* contact section styling */
@@ -1041,6 +1044,7 @@ you might end up with a messy situation */
 
 .contact .contact-content .info .head {
     font-weight: 500;
+    color: gray;
 }
 
 .contact .contact-content .info .sub-title {
@@ -1133,12 +1137,16 @@ footer span a:hover {
 
     .navbar.sticky {
         height: 110px;
+        width: 100%;
     }
 
     .navbar .content {
         height: 60px;
     }
-
+    .contact .contact-content .info .sub-title{
+        font-size: 1rem;
+    }
+    
 }
 
 
@@ -1149,6 +1157,9 @@ footer span a:hover {
 
     .animate__animated.animate__fadeInRight {
         --animate-duration: none;
+    }
+    .contact .contact-content .info .sub-title{
+        font-size: 1rem;
     }
 }
 
@@ -1290,6 +1301,9 @@ footer span a:hover {
         margin: 0px;
         padding: 0px;
     }
+    .contact .contact-content .info .sub-title{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 690px) {
@@ -1321,6 +1335,9 @@ footer span a:hover {
         width: 100%;
         margin: 0px;
         padding: 0px;
+    }
+    .contact .contact-content .info .sub-title{
+        font-size: 1rem;
     }
 }
 
@@ -1371,7 +1388,10 @@ footer span a:hover {
     }
 
     .owl-carousel .owl-stage-outer {
-        width: 350px;
+        width: 100%;
+    }
+    .contact .contact-content .info .sub-title{
+        font-size: 1rem;
     }
 }
 
