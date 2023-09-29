@@ -78,7 +78,75 @@
     --animate-repeat: 2;
 }
 
+  /* this is h1 of all section animation section */
+  .my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
 
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__headShake {
+    --animate-duration: 1.5s;
+}
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}
+
+/* All delay classes will take half the time to start */
+:root {
+    --animate-delay: 0.5s;
+}
+
+/* All animations will take twice as long to finish */
+:root {
+    --animate-duration: 1s;
+}
+
+/* Only this element will take half the time to finish */
+.my-element {
+    --animate-duration: 0.5s;
+}
+
+/* Add animation delay to li elements */
+.animate__animated.animate__headShake.delayed-animation {
+    animation-delay: 0s;
+}
+
+.animate__animated.animate__headShake.delayed-animation:nth-child(2) {
+    animation-delay: 0.5s;
+    /* 1 second delay for the second li */
+}
+
+.animate__animated.animate__headShake.delayed-animation:nth-child(3) {
+    animation-delay: 1s;
+    /* 2 seconds delay for the third li */
+}
+
+.animate__animated.animate__headShake.delayed-animation:nth-child(4) {
+    animation-delay: 1.5s;
+    /* 3 seconds delay for the third li */
+}
+
+.animate__animated.animate__headShake.delayed-animation:nth-child(5) {
+    animation-delay: 2s;
+    /* 4 seconds delay for the third li */
+}
+
+
+/* The element will repeat the animation 2x
+   It's better to set this property locally and not globally or
+   you might end up with a messy situation */
+.my-element {
+    --animate-repeat: 0;
+}
 
 
 

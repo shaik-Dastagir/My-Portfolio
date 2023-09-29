@@ -85,6 +85,26 @@ setInterval(() => {
     bubble.classList.toggle('pulse');
 }, 2000); // Change the interval duration as needed
 // End of bubble effect
+
+// this is the section h1 animation timeing
+  // Function to trigger the animation
+  function animateMenu() {
+    const menuItems = document.querySelectorAll('.delayeds-animation');
+    menuItems.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.remove('animate__headShake');
+            void item.offsetWidth; // Force reflow to restart animation
+            item.classList.add('animate__headShake');
+        }, index * 500); // Delay each item by 500ms
+    });
+}
+
+// Trigger the animation on page load
+animateMenu();
+
+// Set an interval to repeat the animation every 5 seconds
+setInterval(animateMenu, 2500);
+// end of section h1
  
 // this is menu icon 
 // All animations will take twice the time to accomplish
@@ -92,3 +112,19 @@ document.documentElement.style.setProperty('--animate-duration', '2s');
 
 // All animations will take half the time to accomplish
 document.documentElement.style.setProperty('--animate-duration', '1.4s');
+
+// this is scroll up button Animation
+ // Function to trigger the animation
+ function animateDiv() {
+    const div = document.querySelector('.delayedes-animation');
+    div.classList.remove('animate__bounce');
+    void div.offsetWidth; // Force reflow to restart animation
+    div.classList.add('animate__bounce');
+}
+
+// Trigger the animation on page load
+animateDiv();
+
+// Set an interval to repeat the animation every 3 seconds
+setInterval(animateDiv, 3000);
+// end of scroll animation
