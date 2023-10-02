@@ -37,9 +37,9 @@ $('.navbar .menu li a').click(function(){
 });
 
 // toggle menu/navbar script
-$('.menu-btn').click(function(){
+$('.navbar-list').click(function(){
     $('.navbar .menu').toggleClass("active");
-    $('.menu-btn i').toggleClass("active");
+    $('.navbar-list i').toggleClass("active");
 });
 
 // owl carousel script
