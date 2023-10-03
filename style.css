@@ -946,7 +946,7 @@ z-index: 1;
     background: #fff;
 }
 
-.services .serv-content .card {
+.services .serv-content .box {
     width: calc(33% - 20px);
     background: #fff;
     text-align: center;
@@ -957,37 +957,35 @@ z-index: 1;
     height: 426px;
 }
 
-.services .card-gray img {
+.services .box-gray img {
     width: 250px;
     height: 8px;
 }
 
-.services .card-gray {
+.services .box-gray {
     align-items: end;
 }
 
 
-.services .serv-content .box {
-    transition: all 0.3s ease;
-}
 
-.services .serv-content .card:hover {
+
+.services .serv-content .box:hover {
     transform: scale(1.15);
     box-shadow: 0px 0px red, 0em 0.5em 1em rgba(113, 81, 81, 0.366);
     border: #8888885d solid 1px;
 }
 
-.services .serv-content .card i {
+.services .serv-content .box i {
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
 
-.services .serv-content .card:hover i {
+.services .serv-content .box:hover i {
     color: #fff;
 }
 
-.services .serv-content .card .text {
+.services .serv-content .box .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -1078,7 +1076,7 @@ z-index: 1;
 
 /* teams section styling */
 
-.teams .carousel .card {
+.teams .carousel .box {
     background: #fff;
     border-radius: 15px;
     padding: 25px 35px;
@@ -1090,27 +1088,21 @@ z-index: 1;
 
 }
 
-.teams .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
 
-.teams .carousel .card:hover {
+
+.teams .carousel .box:hover {
     transform: scale(1.15);
     box-shadow: 0px 0px red, 0em 0.5em 1em rgba(113, 81, 81, 0.366);
     border: #8888885d solid 1px;
 }
 
-.teams .carousel .card .text {
+.teams .carousel .box .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
-#projects .card-gray img {
+#projects .box-gray img {
     width: 250px;
     height: 8px;
 }
@@ -1400,7 +1392,7 @@ footer span a:hover {
         height: 620px;
     }
 
-    .services .serv-content .card {
+    .services .serv-content .box {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -1490,7 +1482,7 @@ footer span a:hover {
         font-size: 20px;
     }
 
-    .services .serv-content .card {
+    .services .serv-content .box {
         width: 100%;
     }
 
