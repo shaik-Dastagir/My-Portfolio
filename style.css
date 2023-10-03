@@ -845,7 +845,7 @@ height: 100%;
 background-image: url("IMG_20230928_125428.png");
 position: relative;
 border-radius: 20px;
-box-shadow: 0 0 10px gray;
+box-shadow: 0 0 10px rgb(53, 51, 51);
 display: flex;
 align-items: center;
 justify-content: space-around;
@@ -962,15 +962,18 @@ z-index: 1;
     animation: rotate 5s linear infinite;
     content: '';
     position: absolute;
-    width: 130px;
+    width: 200px;
     height: 130%;
-    background: linear-gradient(#2d0540, #ec24d5);
+    background: linear-gradient(#dcd1e2, #e7c1e3);
     border-radius: 20px;
-    border: 50px solid rgb(208, 67, 149);
-    box-shadow: 0 0 20px hotpink;
+    border: 40px solid rgb(226, 29, 144);
+    box-shadow: 0 0 40px hotpink;
 }
 
 .text-box{
+    width: 100%;
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
     z-index: 1;
     
 }
@@ -1042,10 +1045,11 @@ z-index: 1;
     color: #fff;
 }
 
-.services .serv-content .box .text {
+.services .serv-content .box .heading {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    text-transform: uppercase;
 }
 
 /* skills section styling */
@@ -1153,7 +1157,7 @@ z-index: 1;
     border: #8888885d solid 1px;
 }
 
-.teams .carousel .box .text {
+.teams .carousel .box .heading {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -1216,7 +1220,7 @@ z-index: 1;
     width: calc(50% - 30px);
 }
 
-.contact .contact-content .text {
+.contact .contact-content .heading {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -1527,18 +1531,6 @@ footer span a:hover {
         padding: 0 23px;
     }
 
-    .home .home-content .text-2 {
-        font-size: 60px;
-    }
-
-    .home .home-content .text-3 {
-        font-size: 32px;
-    }
-
-    .home .home-content a {
-        font-size: 20px;
-    }
-
     .services .serv-content .box {
         width: 100%;
     }
@@ -1563,11 +1555,9 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2 {
-        font-size: 50px;
-    }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text {
+    
+    .about .about-content .right .heading,
+    .skills .skills-content .left .heading {
         font-size: 19px;
     }
 
