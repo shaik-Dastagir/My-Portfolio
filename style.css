@@ -955,18 +955,18 @@ z-index: 1;
     position: absolute;
     background: #fff;
     inset: 3px;
-    border-radius: 16px;
+    border-radius: 18px;
 }
 
 .box::before{
     animation: rotate 5s linear infinite;
     content: '';
     position: absolute;
-    width: 200px;
+    width: 300px;
     height: 130%;
     background: linear-gradient(#dcd1e2, #e7c1e3);
-    border-radius: 20px;
-    border: 40px solid rgb(226, 29, 144);
+    border-radius: 30px;
+    border: 50px solid rgb(226, 103, 175);
     box-shadow: 0 0 40px hotpink;
 }
 
@@ -1010,7 +1010,7 @@ z-index: 1;
     width: calc(33% - 20px);
     background: #fff;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.6s ease;
